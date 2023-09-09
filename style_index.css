@@ -47,6 +47,10 @@
     font-size: 20px;
     color: aliceblue;
     position: relative;
+    transition: .5s;
+}
+.social a i:hover{
+    color: black;
 }
 
 .navbar a{
