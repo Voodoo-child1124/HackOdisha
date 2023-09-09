@@ -4,8 +4,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat',sans-serif;
-    background-color: black;
-    /* background: "rainforrest.jpg"; */
 }
 .head{
     position: fixed;
@@ -47,8 +45,11 @@
     font-size: 20px;
     color: aliceblue;
     position: relative;
+    transition: .5s;
 }
-
+.social a i:hover{
+    color: black;
+}
 .navbar a{
     position: relative;
     color: aliceblue;
@@ -73,4 +74,46 @@
 .navbar a:hover::after{
     transform-origin: left;
     transform: scaleX(1);
+}
+
+.slide img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+.slide .left-info{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 50%;
+    height: 100%;
+}
+.left-info .penetrate-blur{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(225, 225, 225, .1);
+    backdrop-filter: blur(20px);
+}
+.penetrate-blur h1{
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    font-size: 250px;
+    color: #fff9f9;
+}
+.left-info .content{
+    position: absolute;
+    bottom: 8%;
+    left: 10%;
+    color: #fff;
+}
+.content h3{
+    font-size:20px ;
+}
+.content p{
+    font-size: 16px;
+    margin: 10px 0 15px;
 }
