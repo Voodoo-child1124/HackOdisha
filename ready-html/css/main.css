@@ -98,18 +98,46 @@ body {
 	text-align: center;
 	/* Update: */
 	top: -1px;
+	
 	z-index: 10;
 }
 .main-article__header {
-	padding-top: 15%;
+	
 	text-transform: uppercase;
 	font-size: calc(var(--index) * 1.8);
 	letter-spacing: calc(var(--index) / 7.5);
 	transform: var(--main-article-transform);
 	transition: var(--transition);
 	will-change: transform;
+	display: flex;
+	text-shadow: 0 0 6px orangered;
+	justify-content: center;
+	align-items: center;
+}
+#homeBtn{
+	z-index: 1000000;
+	position: fixed;
+	top:10%;
+	left: 1%;
+	width: fit-content;
+	display: flex;
+
+
+}
+#goHome img{
+	height: 35px;
+	width: 35px;
+}
+#goHome{
+	height: 50px;
+	width: 50px;
+	
+	border-radius: 50%;
+	background-image: url("https://cdn-icons-png.flaticon.com/512/61/61321.png");
+	background: honeydew;
 }
 .main-article__paragraph {
+	text-shadow: 0 0 10px black;
 	max-width: calc(var(--index) * 30);
 	font-size: calc(var(--index) * .9);
 	margin-top: calc(var(--index) / 1.25);
