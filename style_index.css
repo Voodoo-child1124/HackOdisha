@@ -1,11 +1,9 @@
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@500&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat',sans-serif;
-    background-color: black;
-    /* background: "rainforrest.jpg"; */
 }
 .head{
     position: fixed;
@@ -47,8 +45,11 @@
     font-size: 20px;
     color: aliceblue;
     position: relative;
+    transition: .5s;
 }
-
+.social a i:hover{
+    color: black;
+}
 .navbar a{
     position: relative;
     color: aliceblue;
@@ -74,6 +75,49 @@
     transform-origin: left;
     transform: scaleX(1);
 }
+
+.slide img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+.slide .left-info{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 50%;
+    height: 100%;
+}
+.left-info .penetrate-blur{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(225, 225, 225, .1);
+    backdrop-filter: blur(20px);
+}
+.penetrate-blur h1{
+    position: absolute;
+    top: 21.9%;
+    left: 42%;
+    font-size: 250px;
+    color: #fff9f9;
+    font-weight: bold;
+}
+.left-info .content{
+    position: absolute;
+    bottom: 8%;
+    left: 10%;
+    color: #fff;
+}
+.content h3{
+    font-size:20px ;
+}
+.content p{
+    font-size: 16px;
+    margin: 10px 0 15px;
+}
 .content .btn{
     display: inline-block;
     padding: 13px 28px;
@@ -92,29 +136,34 @@
 }
 .slide .right-info{
     position: absolute;
-    top: 0%;
-    right: 0%;
+    top: 0;
+    right: 0;
     width: 50%;
     height: 100%;
     background: turquoise;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: left;
 }
 .right-info h1{
+    margin-top: 21%;
     font-size: 250px;
     color: aliceblue;
-    top: 20%;
     text-shadow: 0 0 10px rgba(0, 0, 0, .5);
-    transform: translateY(150%);
-    margin-left: 13px;
+}
+.right-info h3{
+    font-size: 80px;
+    color: aliceblue;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    transform: translateY(-20%);
+    margin-left: 12px;
+
 }
 .navigation{
-    position: absolute;
-    bottom: 8%;
-    right: 5%;
-    z-index: 99;
+    margin-left: 70%;
+    margin-top: 20%;
+    /* z-index: 99; */
 }
 .navigation span{
     display: inline-flex;
